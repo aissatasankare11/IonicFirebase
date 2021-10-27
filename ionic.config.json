@@ -1,0 +1,7 @@
+{
+  "name": "IkaBara",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
