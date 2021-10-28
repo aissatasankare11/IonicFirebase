@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  itemsCollect: AngularFirestoreCollection;
+  public items ;
+  constructor( public fire: AngularFireDatabase) {}
 
-  constructor() {}
+  ngOnInit() {
+
+    this.fire.list('user').valueChanges()
+    
+    .subscribe(donnees=>
+      {
+        console.log(donnees);
+        this.items=donnees;
+        
+      })
+
+  }
 
 }

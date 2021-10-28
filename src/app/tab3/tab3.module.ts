@@ -7,9 +7,10 @@ import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
-
+import{Ng2SearchPipeModule}from 'ng2-search-filter';
 @NgModule({
   imports: [
+    Ng2SearchPipeModule,
     IonicModule,
     CommonModule,
     FormsModule,

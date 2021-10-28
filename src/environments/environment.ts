@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   firebaseConfig : {
+    apiKey: "AIzaSyDdEUhX3NSwEKGRcT3Re5Ac2FBkbEuq1tc",
+    authDomain: "ikabara.firebaseapp.com",
+    databaseURL: "https://ikabara-default-rtdb.firebaseio.com",
+    projectId: "ikabara",
+    storageBucket: "ikabara.appspot.com",
+    messagingSenderId: "57565343538",
+    appId: "1:57565343538:web:fe14afe31b8b2ab283b12b",
+    measurementId: "G-2F3KVVMJMW"
+  }
+  
 };
 
 /*

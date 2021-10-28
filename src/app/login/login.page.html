@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo">
+    <ion-icon name="people-circle-outline"></ion-icon>
+  </div>
+  <ion-item>
+    <ion-input type='email' expand='block' placeholder="Email" [(ngModel)]='dataUser.email' required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type='password' expand='block'  placeholder="Password" [(ngModel)]='dataUser.password'></ion-input>
+  </ion-item>
+  <br>
+  <ion-label>{{errorMessage}}</ion-label>
+  <ion-button  color="success" expand='block' (click)='login()'>Connexion</ion-button>
+  <ion-button expand='block' (click)='Inscri()'>Inscription</ion-button>
+</ion-content>

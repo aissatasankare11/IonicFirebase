@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="logo">
+    <ion-icon name="person-add-outline"></ion-icon>
+  </div>
+  <ion-item>
+    <ion-input type='text' expand='block' [(ngModel)]='dataUser.nom' placeholder="Nom" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type='text' expand='block' [(ngModel)]='dataUser.prenom' placeholder="Prenom" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type='email' expand='block' [(ngModel)]='dataUser.email' placeholder="email" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type='password' expand='block' [(ngModel)]='dataUser.password' placeholder="Mot de passe:6 caractère au moins" required></ion-input>
+  </ion-item>
+  <br>
+  <div class="err">
+    <ion-label>{{errorMessage}}</ion-label>
+  </div>
+  <ion-button expand='block' color="success" (click)='signup()'>inscription</ion-button>
+  <ion-button expand='block' color="danger" (click)='Annl()'>Annuler</ion-button>
+</ion-content>
